@@ -1,0 +1,81 @@
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    background-color: black;
+  }
+  
+  .container {
+    color:rgb(15, 127, 127);
+    font-size: medium;
+    margin-block: 50px;
+    outline: double;
+  }
+  
+  textarea {
+    background: black;
+    border: solid;
+    resize: both;
+    color: darkgreen;;
+  }
+  
+  .jumbotron {
+    text-align: center;
+    background-color: rgb(15, 127, 127);
+    color: darkred;
+    border-radius: 0;
+    border-bottom: 30px solid black;
+    font-family: monospace;
+  }
+  
+  .description{
+    white-space: pre-wrap;
+  }
+  
+  .time-block{
+    background-color: aqua;
+    text-align: center;
+    border-radius: 12px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+  }
+  
+  .hour {
+    background-color: black;
+    border-top: 10px solid ;
+    margin-bottom: 100px;
+  }
+  
+  .past {
+    background-color:black;
+    color: pink;
+  }
+  
+  .present {
+    background-color: black;
+    color: darkolivegreen;
+  }
+  
+  .future {
+    background-color:black;
+    color: darkgoldenrod;
+  }
+  
+  .saveBtn {
+    border-left: 12px white;
+    border-style:inset;
+    border-style:ridge;
+    background-color:black;
+    color: darkolivegreen;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
