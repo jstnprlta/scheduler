@@ -4,7 +4,7 @@ $("#currentDay").text(currentDate);
 var currentHour = moment().format("H");
 var hourArray = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 
-// THEN I am presented with timeblocks for standard business hours
+
 for (var i = 0; i < hourArray.length; i++) {
   var div1 = $("<div>");
   div1.attr("class", "row");
@@ -24,8 +24,7 @@ for (var i = 0; i < hourArray.length; i++) {
   } else {
     div2.text(hourArray[i] - 12 + " PM");
   }
-  // WHEN I click into a timeblock
-  // THEN I can enter an event
+  
 
   var textarea = $("<textarea>");
   if (hourArray[i] == currentHour) {
@@ -40,15 +39,14 @@ for (var i = 0; i < hourArray.length; i++) {
   textarea.attr("id", hourArray[i]);
   var div3 = $("<div>");
 
-  // WHEN I click the save button for that timeblock
-
+  
   div3.attr("class", "col saveBtn text-center fas fa-lock");
   div1.append(div2);
   div1.append(textarea);
   div1.append(div3);
   $(".container").append(div1);
 }
-//text for that event is saved in local storage
+//text for that event is saved 
 
 $("#9").val(localStorage.getItem("9"));
 $("#10").val(localStorage.getItem("10"));
@@ -67,4 +65,3 @@ $(".saveBtn").click(function (event) {
   localStorage.setItem(hour, userinput);
 });
 
-// THEN each timeblock is color coded to indicate whether it is in the past, present, or future
